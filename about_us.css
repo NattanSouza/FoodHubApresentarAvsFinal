@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Para garantir que o menu não sobreponha o conteúdo */
+main {
+    padding-top: 30px; /* Ajuste conforme necessário para acomodar o cabeçalho fixo */
+}
+
+.mainContent {
+    z-index: 2;
+}
+
+/* Estilo para o menu hambúrguer */
+#mobileNav {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-100%);
+    visibility: hidden;
+}
+
+#mobileNav.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+#burger.open div {
+    background-color: #fff; /* Cor das linhas do hambúrguer quando o menu está aberto */
+}

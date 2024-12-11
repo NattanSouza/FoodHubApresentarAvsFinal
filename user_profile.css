@@ -1,0 +1,12 @@
+/* Garante que o layout ocupa toda altura da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Configurações do layout flexbox */
+body {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+}
